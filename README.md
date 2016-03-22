@@ -6,3 +6,6 @@ I have a PC, a Raspberry Pi, and an old office-computer-turned-ubuntu-box that I
 
 ## Inspirations/ People I stole things from
 - [Zach Holman's](https://github.com/holman) [dotfiles](https://github.com/holman/dotfiles) 
+
+---
+[LICENSE](./LICENSE.md)
