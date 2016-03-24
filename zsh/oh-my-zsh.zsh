@@ -10,7 +10,7 @@ COMPLETION_WAITING_DOTS="true"
 source $ZSH/oh-my-zsh.sh
 
 # setup antigen
-source ~/.antigen/anitgen.zsh
+source ~/.antigen/antigen.zsh
 
 antigen use oh-my-zsh
 
