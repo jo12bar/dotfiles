@@ -1,0 +1,15 @@
+#!/bin/sh
+#
+# dot
+#
+# dot handles installation, updates, and all of that awesome stuff.
+# Run it every now and then to make sure you're up to date.
+#
+# Inspired/ adapted from https://github.com/holman/dotfiles/blob/master/bin/dot
+
+# set this to wherever your dotfiles are kept
+export DOTFILES_ZSH=$HOME/.dotfiles
+
+# install software
+echo "› $DOTFILES_ZSH/script/install"
+$DOTFILES_ZSH/script/install
