@@ -1,0 +1,20 @@
+# stick local/ private config in the include
+[include]
+        path = ~/.gitconfig.local
+[hub]
+        protocol = https
+[color]
+        diff = auto
+        status = auto
+	branch = auto
+	ui = true
+[core]
+        autocrlf = input
+	excludesfile = ~/.gitignore
+	editor = vim
+[apply]
+        whitespace = warn
+[help]
+        autocorrect = 1
+[push]
+        default = simple
