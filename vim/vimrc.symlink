@@ -29,6 +29,15 @@ set background=dark
 colorscheme solarized
 let g:solarized_contrast = 'high'
 
+set hlsearch " highlight searches
+set incsearch " highlight dynamically as pattern is typed
+
+set mouse=a " enable mouse in all modes
+set ttyfast " Send more characters at a given time
+
+set splitbelow " New window goes below
+set splitright " New windows goes right
+
 set tildeop
 
 inoremap jk <ESC>
