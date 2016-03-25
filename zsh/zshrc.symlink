@@ -39,4 +39,7 @@ do
   source $file
 done
 
+# tell user the date
+$DOTFILES_ZSH/bin/today
+
 unset config_files

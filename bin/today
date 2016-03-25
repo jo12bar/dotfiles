@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+# Tells me what day it is (I forget a lot)
+
+echo -n "Today's date is: "
+date +"%A, %B %-d, %Y"
+echo ""
+cal
