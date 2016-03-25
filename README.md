@@ -8,8 +8,8 @@ I have a PC, a Raspberry Pi, and an old office-computer-turned-ubuntu-box that I
 - `bin/dot` Updates your environment by running `script/install`, which in turn runs any `install.sh` files that it can find.
 
 ## Inspirations/ People I stole things from
-- @holman's [dotfiles](https://github.com/holman/dotfiles) 
-- @thoughtbot's [dotfiles](https://github.com/thoughtbot/dotfiles)
+- [@holman's](https://github.com/holman) [dotfiles](https://github.com/holman/dotfiles) 
+- [@thoughtbot's](https://github.com/thoughtbot) [dotfiles](https://github.com/thoughtbot/dotfiles)
 
 ---
 [LICENSE](./LICENSE.md)
