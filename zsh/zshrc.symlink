@@ -39,6 +39,8 @@ do
   source $file
 done
 
+eval `dircolors $HOME/.dir_colors`
+
 # tell user the date
 $DOTFILES_ZSH/bin/today
 
