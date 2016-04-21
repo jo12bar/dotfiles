@@ -40,6 +40,12 @@ set incsearch " highlight dynamically as pattern is typed
 set mouse=a " enable mouse in all modes
 set ttyfast " Send more characters at a given time
 
+" remap method for switching splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-H> <C-W><C-H>
+nnoremap <C-L> <C-W><C-L>
+
 set splitbelow " New window goes below
 set splitright " New windows goes right
 
