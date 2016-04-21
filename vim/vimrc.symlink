@@ -28,10 +28,11 @@ set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusl
 let g:airline_powerline_fonts = 1
 
 syntax enable
+set t_Co=256
 set background=dark
 colorscheme solarized
-let g:solarized_contrast = 'high'
-let g:solarized_termcolors=256
+"let g:solarized_termcolors = 256
+call togglebg#map("<F5>")
 
 set hlsearch " highlight searches
 set incsearch " highlight dynamically as pattern is typed
