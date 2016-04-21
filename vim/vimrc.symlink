@@ -95,3 +95,7 @@ nnoremap <Down> :echoe "Use j, stupid."<CR>
 
 " Emmet leader keybinding
 let g:user_emmet_leader_key = '<C-y>'
+
+set complete=.,b,u,]
+set wildmode=longest,list:longest
+imap <Tab> <C-P>
