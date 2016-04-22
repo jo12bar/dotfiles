@@ -6,7 +6,15 @@
 
 set -e
 
+source "$(dirname $0)/lib/info_printer.bash"
+
+dot_dir=`dirname $0`/..
+
+text_info script/install "› cd ${dot_dir}"
 cd "$(dirname $0)"/..
 
 # find the installers and run them iteratively
-find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
+find . -name install.bash | while read installer; do
+  text_info script/install "› sh -c \"${installer}\""
+  sh -c "${installer}"
+done

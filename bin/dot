@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 #
 # dot
 #
@@ -10,6 +10,9 @@
 # set this to wherever your dotfiles are kept
 export DOTFILES_ZSH=$HOME/.dotfiles
 
+# Load colored info printer
+source $DOTFILES_ZSH/script/lib/info_printer.bash
+
 # install software
-echo "› $DOTFILES_ZSH/script/install"
+text_info dot "› $DOTFILES_ZSH/script/install"
 $DOTFILES_ZSH/script/install
