@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 #
 # Script that conditionally starts tmux with new session with name
 # $TMUX_SESSION_NAME or attachs to $TMUX_SESSION_NAME
