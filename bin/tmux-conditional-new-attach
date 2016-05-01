@@ -10,4 +10,4 @@
 # The name of the tmux session to be created.
 export TMUX_SESSION_NAME='fun'
 
-tmux attach -t $TMUX_SESSION_NAME || tmux new -s $TMUX_SESSION_NAME
+tmux new-session -A -s $TMUX_SESSION_NAME
