@@ -6,12 +6,12 @@
 [color]
         diff = auto
         status = auto
-	branch = auto
-	ui = true
+      	branch = auto
+      	ui = true
 [core]
         autocrlf = input
-	excludesfile = ~/.gitignore
-	editor = vim
+      	excludesfile = ~/.gitignore
+      	editor = vim
 [apply]
         whitespace = warn
 [help]

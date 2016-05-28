@@ -34,7 +34,8 @@ setup_gitconfig () {
   then
     info 'setup gitconfig'
 
-    git_credential='cache'
+    # default helper is 'cache' (works for Linux) w/ 30min timeout
+    git_credential='cache --timeout=1800'
     if [ "$(uname -s)" == "Darwin" ]
     then
       git_credential='osxkeychain'
