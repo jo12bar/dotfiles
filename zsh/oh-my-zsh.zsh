@@ -19,5 +19,8 @@ antigen bundles <<EOBUNDLES
   unixorn/autoupdate-antigen.zshplugin
 EOBUNDLES
 
+# Load theme of choice
+antigen theme agnoster
+
 # Done!
 antigen apply
