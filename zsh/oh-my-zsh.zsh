@@ -11,11 +11,13 @@ COMPLETION_WAITING_DOTS="true"
 antigen use oh-my-zsh
 
 # Load oh-my-zsh plugins
-antigen bundle git
-antigen bundle npm
-antigen bundle sudo
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle unixorn/autoupdate-antigen.zshplugin
+antigen bundles <<EOBUNDLES
+  git
+  npm
+  sudo
+  zsh-users/zsh-syntax-highlighting
+  unixorn/autoupdate-antigen.zshplugin
+EOBUNDLES
 
 # Done!
 antigen apply
