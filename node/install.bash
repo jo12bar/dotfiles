@@ -9,7 +9,4 @@ do
   text_info node/install.bash "  - $package"
 done
 
-for package in ${packages[*]}
-do
-  npm install --global $package
-done
+npm install --global ${packages[*]}
