@@ -11,6 +11,9 @@ bind - split-window -v
 unbind '"'
 unbind %
 
+# Enable mouse mode
+set -g mouse on
+
 # List of TPM-compatible plugins
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
