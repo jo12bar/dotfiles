@@ -17,21 +17,14 @@ set -g mouse on
 # Dark mode for seebi/tmux-colors-solarized
 set -g @colors-solarized 'dark'
 
-# List of TPM-compatible plugins
-set -g @plugin 'tmux-plugins/tpm'
-set -g @plugin 'tmux-plugins/tmux-sensible'
-set -g @plugin 'seebi/tmux-colors-solarized'
-set -g @plugin 'tmux-plugins/tmux-copycat'
-set -g @plugin 'tmux-plugins/tmux-yank'
-
-# Init TMUX plugin manager (Keep at very bottom of file!)
-run '~/.tmux/plugins/tpm/tpm'
+# Setup colours for tmux-prefix-highlight
+set -g @prefix_highlight_fg colour15 # default is 'colour231'
+set -g @prefix_highlight_bg colour4  # default is 'colour04'
+set -g @prefix_highlight_show_copy_mode 'on'
+set -g @prefix_highlight_copy_mode_atty 'fg=colour8,bg=colour3'
 
 ################################################################################
 #                                DESIGN CHANGES                                #
-#==============================================================================#
-# Must be run after seebi/tmux-colors-solarized, in case if I need to override #
-#                                    stuff.                                    #
 #==============================================================================#
 #                              Mostly stolen from:                             #
 #      http://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/     #
@@ -66,5 +59,16 @@ set -g pane-active-border-fg colour1
 
 # The statusbar
 set -g status-position bottom
-set -g status-right "#[fg=colour9,bg=colour8] #{=21:pane_title} #[bg=default] #[fg=colour6,bg=colour8] %I:%M %p  %b. %e, %Y #[bg=default] "
+set -g status-right " #{prefix_highlight} #[fg=colour9,bg=colour8] #{=21:pane_title} #[bg=default] #[fg=colour6,bg=colour8] %I:%M %p  %b. %e, %Y #[bg=default] "
 set -g status-right-length 100
+
+# List of TPM-compatible plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'seebi/tmux-colors-solarized'
+set -g @plugin 'tmux-plugins/tmux-copycat'
+set -g @plugin 'tmux-plugins/tmux-yank'
+set -g @plugin 'tmux-plugins/tmux-prefix-highlight'
+
+# Init TMUX plugin manager (Keep at very bottom of file!)
+run '~/.tmux/plugins/tpm/tpm'
