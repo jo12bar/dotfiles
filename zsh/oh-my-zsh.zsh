@@ -13,7 +13,6 @@ antigen use oh-my-zsh
 # Load oh-my-zsh plugins
 antigen bundles <<EOBUNDLES
   git
-  npm
   sudo
   zsh-users/zsh-syntax-highlighting
   unixorn/autoupdate-antigen.zshplugin
