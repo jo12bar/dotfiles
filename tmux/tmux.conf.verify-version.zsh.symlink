@@ -6,7 +6,7 @@
 # versions)
 
 tmux_version=$(tmux -V | cut -c 6-)
-touch ~/Desktop/foo
+
 if (( $tmux_version >= 2.1 )); then
   tmux display "Loading config for tmux v >= 2.1"
   tmux source-file "${HOME}/.tmux.v2.1-up.conf"
