@@ -1,0 +1,19 @@
+#!/usr/bin/env zsh
+#
+# Load version-specific tmux config for better interop
+#
+# (as of writing, Raspbain only has tmux 1.9, while Ubuntu has more recent
+# versions)
+
+tmux_version=$(tmux -V | cut -c 6-)
+touch ~/Desktop/foo
+if (( $tmux_version >= 2.1 )); then
+  tmux display "Loading config for tmux v >= 2.1"
+  tmux source-file "${HOME}/.tmux.v2.1-up.conf"
+elif (( $tmux_version >= 1.9 )); then
+  tmux display "Loading config for tmux 1.9 <= v < 2.1"
+  tmux source-file "${HOME}/.tmux.v1.9-v2.1.conf"
+else
+  tmux display "Loading config for tmux v < 1.9"
+  tmux source-file "${HOME}/.tmux.v1.9-down.conf"
+fi

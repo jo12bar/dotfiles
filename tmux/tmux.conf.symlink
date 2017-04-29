@@ -11,9 +11,6 @@ bind - split-window -v
 unbind '"'
 unbind %
 
-# Enable mouse mode
-set -g mouse on
-
 # Dark mode for seebi/tmux-colors-solarized
 set -g @colors-solarized 'dark'
 
@@ -69,6 +66,9 @@ set -g @plugin 'seebi/tmux-colors-solarized'
 set -g @plugin 'tmux-plugins/tmux-copycat'
 set -g @plugin 'tmux-plugins/tmux-yank'
 set -g @plugin 'tmux-plugins/tmux-prefix-highlight'
+
+# Run version-specific config
+run-shell "zsh ~/.tmux.conf.verify-version.zsh"
 
 # Init TMUX plugin manager (Keep at very bottom of file!)
 run '~/.tmux/plugins/tpm/tpm'
