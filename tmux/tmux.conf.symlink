@@ -11,6 +11,11 @@ bind - split-window -v
 unbind '"'
 unbind %
 
+# tmux-resurrect & tmux-continuum config
+set -g @continuum-restore 'on'
+set -g @continuum-boot 'on'
+set -g @resurrect-capture-pane-contents 'on'
+
 # Dark mode for seebi/tmux-colors-solarized
 set -g @colors-solarized 'dark'
 
@@ -66,6 +71,8 @@ set -g @plugin 'seebi/tmux-colors-solarized'
 set -g @plugin 'tmux-plugins/tmux-copycat'
 set -g @plugin 'tmux-plugins/tmux-yank'
 set -g @plugin 'tmux-plugins/tmux-prefix-highlight'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-continuum'
 
 # Run version-specific config
 run-shell "zsh ~/.tmux.conf.verify-version.zsh"
