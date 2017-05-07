@@ -10,4 +10,7 @@
 # The name of the tmux session to be created.
 export TMUX_SESSION_NAME='fun'
 
-tmux new-session -A -s $TMUX_SESSION_NAME
+# NOTE: We are forcing TERM to screen-256color here because emulators such as
+# gnome-terminal do not automatically set it when running a script instead of a
+# login shell. If we don't set it, then the terminal will not be in full color.
+TERM=screen-256color tmux new-session -A -s $TMUX_SESSION_NAME
