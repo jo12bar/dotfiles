@@ -1,0 +1,13 @@
+{
+    "[shellscript]": {
+        "files.eol": "\n",
+    },
+    "files.associations": {
+        "*.sh.tmpl": "shellscript",
+        "*.bash.tmpl": "shellscript",
+        "*.zsh.tmpl": "shellscript",
+        "*.fish.tmpl": "fish",
+        "fish_plugins.tmpl": "fish",
+        "*.yaml.tmpl": "jinja-yaml",
+    }
+}

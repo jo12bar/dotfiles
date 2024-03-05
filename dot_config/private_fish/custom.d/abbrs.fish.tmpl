@@ -1,0 +1,29 @@
+# git
+if type -q git
+  abbr g 'git'
+  abbr ga 'git add .'
+  abbr gaa 'git add --all'
+  abbr gc 'git commit'
+  abbr gcm 'git commit -m'
+  abbr gs 'git status'
+  abbr gp 'git push'
+  abbr gpl 'git pull'
+  abbr gl 'git log'
+  abbr gd 'git diff'
+  abbr gds 'git diff --staged'
+  abbr gr 'git restore .'
+  abbr grs 'git restore --staged .'
+end
+
+# ls abbreviations
+if type -q eza
+  abbr lsa 'eza -lag --git --icons --sort=type'
+  abbr l 'eza -lag --git --icons --sort=type'
+  abbr ll 'eza -l --icons --git --sort=type'
+  abbr la 'eza -lag --git --icons --sort=type'
+else
+  abbr lsa 'ls -lah'
+  abbr l 'ls -lah'
+  abbr ll 'ls -lh'
+  abbr la 'ls-lAh'
+end

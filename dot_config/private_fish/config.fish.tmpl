@@ -1,0 +1,49 @@
+## Source custom configs
+for file in $__fish_config_dir/custom.d/*.fish
+    source $file
+end
+
+if type -q starship
+    starship init fish | source
+end
+
+if type -q zoxide
+    zoxide init fish | source
+end
+
+if type -q mise
+    mise activate fish | source
+end
+
+##### OLD STUFF BELOW #####
+
+# if status is-interactive
+#     # Commands to run in interactive sessions can go here
+# end
+
+# #############################
+# # Fisher shell plugin setup #
+# #############################
+
+# if not test -e
+#     # if fisher isn't installed, install it from github
+#     echo "Installing fisher"
+#     curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source
+#     fisher update
+# end
+
+# ######################################
+# # Mise version manager configuration #
+# ######################################
+
+# if not command -sq mise
+#     # if mise isn't installed, install it while verifying the installer script
+#     # with gpg.
+#     echo "Installing mise"
+#     gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys 0x7413A06D
+#     curl https://mise.jdx.dev/install.sh.sig | gpg --decrypt > /tmp/install-mise.sh
+#     sh /tmp/install-mise.sh
+#     rm /tmp/install-mise-sh
+# end
+
+# ~/.local/bin/mise activate fish | source

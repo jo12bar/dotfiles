@@ -1,0 +1,15 @@
+#!/usr/bin/env fish
+
+echo -e "\033[0;32m>>>>> Begin Setting Up Fish Completions <<<<<\033[0m"
+
+## Setup completions
+if not test -d $__fish_config_dir/completions
+  mkdir -p $__fish_config_dir/completions
+end
+
+if type -q chezmoi
+  echo "setting up chezmoi completion"
+  chezmoi completion fish --output=$__fish_config_dir/completions/chezmoi.fish
+end
+
+echo -e "\033[0;32m>>>>> Finish Setting Fish Completions <<<<<\033[0m"
