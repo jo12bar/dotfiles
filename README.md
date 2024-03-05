@@ -1,3 +1,7 @@
+# ARCHIVED: This is the archived branch of my old dotfiles from way back when.
+
+---
+
 # dotfiles
 A collection of my dotfiles for personal use. Feel free to make issues, pull requests, etc... at any time. Just know that I may not respond to all of them, because I'm pretty busy.
 
@@ -8,7 +12,7 @@ I have a PC, a Raspberry Pi, and an old office-computer-turned-ubuntu-box that I
 - `bin/dot` Updates your environment by running `script/install`, which in turn runs any `install.sh` files that it can find.
 
 ## Inspirations/ People I stole things from
-- [@holman's](https://github.com/holman) [dotfiles](https://github.com/holman/dotfiles) 
+- [@holman's](https://github.com/holman) [dotfiles](https://github.com/holman/dotfiles)
 - [@thoughtbot's](https://github.com/thoughtbot) [dotfiles](https://github.com/thoughtbot/dotfiles)
 
 ---
