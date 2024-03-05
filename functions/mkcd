@@ -1,6 +1,0 @@
-#!/bin/zsh
-#
-# mkcd
-#
-# Creates a new directory, and enters it.
-mkdir -p "$@" && cd "$@"
