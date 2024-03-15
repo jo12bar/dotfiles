@@ -6,5 +6,5 @@ if status is-login
     # SSH_KEYS_TO_AUTOLOAD is a global user variable. Add SSH keys to the array
     # with something like
     # > set -Ua SSH_KEYS_TO_AUTOLOAD ~/.ssh/id...
-    keychain --eval $SSH_KEYS_TO_AUTOLOAD | source
+    keychain --quiet --eval $SSH_KEYS_TO_AUTOLOAD | source
 end
