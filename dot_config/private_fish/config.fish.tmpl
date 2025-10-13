@@ -1,3 +1,6 @@
+## Load /etc/profile by interpreting in a bash shell, and copying env vars
+fenv source /etc/profile
+
 ## Source custom configs
 for file in $__fish_config_dir/custom.d/*.fish
     source $file
